@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Temperature Conversion System</title>
+</head>
+<body class="bd">
+    <div class="total">
+    <div class="heading">Temperature Conversion System</div>
+    <hr class="line">
+    
+    <p class="text">Enter The Value :</p>
+    <label>
+        <input type="text" placeholder="Enter the value" class="input" id="temperatureInput"><br>
+    </label>
+    
+    <label for="cars" class="text">Choose The Temperature Unit:</label>
+    <select id="cars" name="cars" class="input">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    
+    <input type="submit" class="submit" value="Convert" onclick="convertTemperature()"><br>
+    <div class="result-container">
+    <p class="text">
+        The Value in Celsius Is: <span id="convertedValue1"  class="result-box"></span><br><br>
+        The Value in Fahrenheit Is: <span id="convertedValue2" class="result-box"></span><br><br>
+        The Value in Kelvin Is: <span id="convertedValue3"  class="result-box"></span>
+    </p>
+    </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Vishvajith S. All Rights Reserved.
+    </footer>
+  
+</body>
+</html>
